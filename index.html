@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Content Security Policy: restrict resources to self and data URIs -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <title>Prakash Chand Meena - Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -13,17 +13,17 @@
     <nav>
         <div class="nav-container">
             <div class="logo">Prakash Chand Meena</div>
-            <div class="hamburger" onclick="toggleMenu()">
+            <div class="hamburger js-hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-links" id="navMenu">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -47,7 +47,7 @@
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" ><path d="M3 6.5C3 5.67 3.67 5 4.5 5H19.5C20.33 5 21 5.67 21 6.5V17.5C21 18.33 20.33 19 19.5 19H4.5C3.67 19 3 18.33 3 17.5V6.5Z" stroke="#222" stroke-width="1.2" stroke-linejoin="round"/><path d="M21 6.5L12 12.5L3 6.5" stroke="#222" stroke-width="1.2" stroke-linejoin="round"/></svg>
                 </a>
             </div>
-            <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered" onclick="location.href='#about'">
+            <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered js-scroll-arrow" data-target="#about">
         </div>
     </section>
 
@@ -75,7 +75,7 @@
                 <p>Passionate software developer with a strong focus on Data Structures, Algorithms, and competitive programming, actively practicing on LeetCode, CodeChef, and Codeforces. With a solid foundation in computer science and hands-on experience in multiple programming languages and frameworks, I enjoy building efficient, scalable projects. Driven by continuous learning and strong problem-solving, I aim to create impactful technology solutions.</p>
             </div>
         </div>
-        <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered" onclick="location.href='#certificates'">
+        <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered js-scroll-arrow" data-target="#certificates">
     </section>
 
     <!-- Certificates Section -->
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered" onclick="location.href='#experience'">
+        <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered js-scroll-arrow" data-target="#experience">
     </section>
 
     <!-- Experience Section -->
@@ -262,7 +262,7 @@
                 </div>
             </div>
         </div>
-        <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered" onclick="location.href='#projects'">
+        <img src="data:image/svg+xml,%3Csvg  viewBox='0 0 24 24'%3E%3Cpath d='M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z' transform='rotate(90 12 12)'/%3E%3C/svg%3E" alt="Arrow" class="arrow arrow-centered js-scroll-arrow" data-target="#projects">
     </section>
 
 
@@ -280,23 +280,6 @@
         <p>Copyright © 2025 Prakash Chand Meena. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('navMenu');
-            menu.classList.toggle('active');
-        }
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const menu = document.getElementById('navMenu');
-            const hamburger = document.querySelector('.hamburger');
-            const isClickInsideMenu = menu.contains(event.target);
-            const isClickOnHamburger = hamburger.contains(event.target);
-            
-            if (!isClickInsideMenu && !isClickOnHamburger && menu.classList.contains('active')) {
-                menu.classList.remove('active');
-            }
-        });
-    </script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
